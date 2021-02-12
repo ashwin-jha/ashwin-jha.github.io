@@ -94,6 +94,8 @@
   left: 5px; }
 .navbar {
   display: none; }
+.avatar {
+  display: none; }
 
 /* Larger than phone */
 @media (min-width: 550px) {
@@ -165,6 +167,14 @@
   /* Re-overiding the width 100% declaration to match size of % based container */
   .has-docked-nav .navbar > .container {
     width: 80%; }
+  .avatar {
+    display: inline;
+    float: left;
+    width: 90%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 1rem; }
 }
 a {
     color: #0e7eff;
