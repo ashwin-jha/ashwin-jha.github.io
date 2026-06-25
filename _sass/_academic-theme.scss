@@ -1,0 +1,104 @@
+// Runtime academic theme tokens.
+// Import this AFTER Skeleton and BEFORE _academic-site.scss.
+//
+// Change fonts, font sizes, colors, spacing, and radii here.
+// The rest of the site should refer to these via var(--token-name).
+
+:root {
+  color-scheme: light dark;
+
+  // Fonts. Load Source Serif 4 and Inter in the HTML <head>.
+  --font-serif: "Artifika", "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+
+  // Type scale. Skeleton uses 62.5% on html, so 1.8rem is roughly 18px.
+  --text-base: 1.60rem;
+  --text-small: 1.45rem;
+  --text-smaller: 1.30rem;
+  --text-large: 2.05rem;
+  --title-size: clamp(4.0rem, 8vw, 6.8rem);
+  --subtitle-size: clamp(1.8rem, 2.4vw, 2.15rem);
+  --section-title-size: clamp(3.0rem, 6vw, 5.1rem);
+  --section-subtitle-size: clamp(2.0rem, 4vw, 3.4rem);
+  --line-height: 1.6;
+  --line-height-tight: 1.25;
+
+  // Layout and spacing.
+  --container-readable: 920px;
+  --measure: 78ch;
+  --radius: 10px;
+  --space-section: 4rem;
+
+  // Light theme colors.
+  --color-bg: #fbfaf7;
+  --color-surface: #ffffff;
+  --color-surface-soft: #f5f0e8;
+  --color-text: #24211f;
+  --color-heading: #1f1b18;
+  --color-muted: #6f6760;
+  --color-border: #ded8cf;
+  --color-border-soft: rgba(94, 80, 67, 0.18);
+  --color-link: #7a3e2c;
+  --color-link-hover: #4f261b;
+  --color-mark: #fff1c7;
+  --color-code-bg: #f1ece4;
+  --shadow-soft: 0 12px 30px rgba(80, 60, 40, 0.07);
+}
+
+// Automatic dark mode when the visitor has no explicit saved preference.
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg: #141312;
+    --color-surface: #1d1b19;
+    --color-surface-soft: #24211f;
+    --color-text: #eee8df;
+    --color-heading: #fff7ec;
+    --color-muted: #b8afa4;
+    --color-border: #39342f;
+    --color-border-soft: rgba(238, 232, 223, 0.16);
+    --color-link: #d99a7a;
+    --color-link-hover: #f0b89b;
+    --color-mark: #5c4320;
+    --color-code-bg: #23201d;
+    --shadow-soft: none;
+  }
+}
+
+// Explicit light theme. This is used by the manual toggle.
+html[data-theme="light"] {
+  color-scheme: light;
+
+  --color-bg: #fbfaf7;
+  --color-surface: #ffffff;
+  --color-surface-soft: #f5f0e8;
+  --color-text: #24211f;
+  --color-heading: #1f1b18;
+  --color-muted: #6f6760;
+  --color-border: #ded8cf;
+  --color-border-soft: rgba(94, 80, 67, 0.18);
+  --color-link: #7a3e2c;
+  --color-link-hover: #4f261b;
+  --color-mark: #fff1c7;
+  --color-code-bg: #f1ece4;
+  --shadow-soft: 0 12px 30px rgba(80, 60, 40, 0.07);
+}
+
+// Explicit dark theme. This is used by the manual toggle.
+html[data-theme="dark"] {
+  color-scheme: dark;
+
+  --color-bg: #141312;
+  --color-surface: #1d1b19;
+  --color-surface-soft: #24211f;
+  --color-text: #eee8df;
+  --color-heading: #fff7ec;
+  --color-muted: #b8afa4;
+  --color-border: #39342f;
+  --color-border-soft: rgba(238, 232, 223, 0.16);
+  --color-link: #d99a7a;
+  --color-link-hover: #f0b89b;
+  --color-mark: #5c4320;
+  --color-code-bg: #23201d;
+  --shadow-soft: none;
+}

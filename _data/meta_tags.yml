@@ -1,0 +1,19 @@
+pc:
+  prefix: "Invited to the programme committee of"
+  label: "Service"
+  icon: "fa-solid fa-users"
+
+preprint:
+  prefix: "New preprint on"
+  label: "Preprint"
+  icon: "fa-solid fa-file-lines"
+
+talk_invitation:
+  prefix: "Invited to give a talk at"
+  label: "Invitation"
+  icon: "fa-solid fa-envelope-open-text"
+
+talk_delivered:
+  prefix: "Gave an invited talk at"
+  label: "Talk"
+  icon: "fa-solid fa-person-chalkboard"

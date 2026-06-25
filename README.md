@@ -1,2 +1,2 @@
 # ashwin-jha.github.io
-Personal webpage
+Personal academic webpage

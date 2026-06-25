@@ -1,0 +1,26 @@
+<header class="masthead" id="masthead">
+  <h1 class="title">{{ site.author.name }}</h1>
+  <p class="profile-icons" aria-label="Academic profile links">
+      <a href="{{ site.author.cv | relative_url }}" target="_blank" rel="noopener" aria-label="CV" title="CV">
+        <i class="fa-solid fa-file-lines"></i>
+      </a>
+    <a href="mailto:{{ site.author.email }}" aria-label="Email" title="Email">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+    <a href="https://scholar.google.com/citations?user={{ site.author.google_scholar }}" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar">
+      <i class="ai ai-google-scholar"></i>
+    </a>
+    <a href="https://de.linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a href="https://dblp.org/pid/{{ site.author.dblp }}.html" target="_blank" rel="noopener" aria-label="DBLP" title="DBLP">
+      <i class="ai ai-dblp"></i>
+    </a>
+    <a href="https://www.mathgenealogy.org/id.php?id={{ site.author.math_genealogy }}" target="_blank" rel="noopener" aria-label="Mathematics Genealogy" title="Mathematics Genealogy" class="math-genealogy-icon">
+      <span aria-hidden="true"></span>
+    </a>
+    <a href="https://orcid.org/{{ site.author.orcid }}" target="_blank" rel="noopener" aria-label="ORCID" title="ORCID">
+      <i class="ai ai-orcid"></i>
+    </a>
+  </p>
+</header>

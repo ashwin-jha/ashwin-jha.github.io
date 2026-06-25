@@ -1,0 +1,47 @@
+<section id="services">
+  <h1>Academic Services</h1>
+
+  <h2>Selected Invited Talks</h2>
+  {% assign talks = site.data.talks | sort: "date" | reverse %}
+  <ol class="talks">
+      {% for talk in talks %}
+      <li class="talk">
+          <a class="talk-title" href="{{ talk.link | relative_url }}" target="_blank" rel="noopener">{{ talk.title }}</a>
+          <div class="talk-venue">{{ talk.venue }}</div>
+      </li>
+      {% endfor %}
+  </ol>
+
+  <h2>Programme Committees / Editorial Boards</h2>
+  {% assign committees = site.data.committees | sort: "name" %}
+  <ul class="service-list">
+      {% for committee in committees %}
+      <li>{{ committee.name }} {{committee.years}}</li>
+      {% endfor %}
+  </ul>
+
+  <h2>Organisation</h2>
+  <ul class="activity-list">
+      <li>Co-organiser of the recurring <a href="https://gapsworkshop.github.io/online/" target="_blank" rel="noopener">Online GAPS</a> seminar since Feb 2026.</li>
+      <li>Co-organiser of <a href="https://gapsworkshop.github.io/gaps2025/" target="_blank" rel="noopener">GAPS 2025</a>, held in Singapore in September 2025.</li>
+  </ul>
+
+  <h2>Teaching</h2>
+  {% assign teachings = site.data.teachings | sort: "year" | reverse %}
+  <ul class="teachings">
+      {% for teaching in teachings %}
+      <li>
+          <div class="teaching-subject">
+              {% if teaching.link %}
+              <a href="{{ teaching.link }}" target="_blank" rel="noopener">{{ teaching.subject }}</a>
+              {% else %}
+              {{ teaching.subject }}
+              {% endif %}
+          </div>
+          <div class="teaching-meta">
+              {{ teaching.role }} · {{ teaching.institution }} · {{ teaching.season }} {{ teaching.year }}
+          </div>
+      </li>
+      {% endfor %}
+  </ul>
+</section>

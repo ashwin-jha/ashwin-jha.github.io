@@ -1,0 +1,17 @@
+<div class="docs-section" id="publications">
+  <div class="docs-header">Publications</div>
+  {% assign pubs = site.data.pubs | sort: "year" | reverse %}
+  {% for pub in pubs %}
+  <ul>
+    <li>
+      <a href="{{ pub.link }}" target="_blank">
+	<b>{{ pub.title }}</b>
+      </a>
+      <br>
+      <i>{{ pub.authors }}</i>
+      <br>
+      {{ pub.venue }}
+    </li>
+  </ul>
+  {% endfor %}
+</div>

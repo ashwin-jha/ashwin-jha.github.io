@@ -1,0 +1,32 @@
+<section id="research">
+  <h1>Research</h1>
+  <p>
+      My current research programme focuses on practice-oriented provable security of symmetric-key cryptography against both classical and post-quantum adversaries. I am particularly interested in efficient constructions, security models for evolving real-world threats, and statistical and combinatorial tools for obtaining tight security guarantees under minimal assumptions.
+      <br>
+      More broadly, I am also interested in research questions arising from the interplay between cryptology and its allied fields of cybersecurity, combinatorics, statistics, and complexity theory.
+  </p>
+  
+  <h2>Publications</h2>
+  {% assign pubs = site.data.pubs | sort: "date" | reverse %}
+  <ol class="publications">
+      {% for pub in pubs %}
+      <li class="pub">
+          <a class="pub-title" href="{{ pub.link | relative_url }}" target="_blank" rel="noopener">{{ pub.title }}</a>
+          <div class="pub-authors">{{ pub.authors }}</div>
+          <div class="pub-venue">{{ pub.venue }}</div>
+      </li>
+      {% endfor %}
+  </ol>
+  
+  <h2>Preprints / Reports</h2>
+  {% assign notes = site.data.notes | sort: "date" | reverse %}
+  <ol class="publications">
+      {% for note in notes %}
+      <li class="pub">
+          <a class="pub-title" href="{{ note.link | relative_url }}" target="_blank" rel="noopener">{{ note.title }}</a>
+          <div class="pub-authors">{{ note.authors }}</div>
+          <div class="pub-venue">{{ note.venue }}</div>
+      </li>
+      {% endfor %}
+  </ol>
+</section>

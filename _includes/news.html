@@ -1,0 +1,31 @@
+<section class="news-section">
+  <h2>Latest news</h2>
+  {% assign news = site.data.news | sort: "date" | reverse %}
+  <ul class="news-list">
+    {% for item in news limit: 5 %}
+    {% assign type_info = site.data.meta_tags[item.type] %}
+      <li class="news-item">
+        <span class="news-type" aria-label="{{ type_info.label }}">
+          <i class="{{ type_info.icon }}" aria-hidden="true"></i>          
+        </span>
+        <time datetime="{{ item.date }}">
+            [{{ item.date | date: "%b %Y" }}]
+        </time>
+        <span class="news-text">
+            {{ type_info.prefix }}
+            {% case item.type %}
+            {% when "preprint" %}
+            <a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.topic }}</a>.
+            {% when "pc" %}
+            <a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.venue }}</a>.
+            {% when "talk_invitation" %}
+            <a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.venue }}</a>.
+            {% when "talk_delivered" %}<a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.venue }}</a> {{ item.topic }}.
+            {% else %}
+            {{ item.text }}.
+            {% endcase %}
+        </span>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

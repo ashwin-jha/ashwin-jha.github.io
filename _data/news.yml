@@ -1,0 +1,25 @@
+- date: "2026-05-30"
+  type: "pc"
+  venue: "EUROCRYPT 2027"
+  link: "https://eurocrypt.iacr.org/2027/"
+
+- date: "2026-02-09"
+  type: "pc"
+  venue: "ASIACRYPT 2026"
+  link: "https://asiacrypt.iacr.org/2026/"
+
+- date: "2026-05-06"
+  type: "talk_invitation"
+  venue: "GAPS 2026"
+  link: "https://gapsworkshop.github.io/gaps2026/"
+
+- date: "2026-03-19"
+  type: "talk_delivered"
+  venue: "ASK 2026"
+  link: "https://ask2026.github.io/"
+  topic: "on constrained systems"
+
+- date: "2026-02-09"
+  type: "preprint"
+  topic: "definition of quantum-secure MACs"
+  link: "https://eprint.iacr.org/2026/336"

@@ -1,0 +1,11 @@
+- name: Home
+  link: "#masthead"
+
+- name: Research
+  link: "#research"
+
+- name: Services
+  link: "#services"
+
+- name: Contact
+  link: "#contact"

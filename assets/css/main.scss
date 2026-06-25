@@ -1,0 +1,21 @@
+---
+---
+// Main Jekyll stylesheet.
+// Put this file at assets/css/main.scss.
+// Put the partials in _sass/.
+
+@import "academic-variables";
+@import "skeleton";
+@import "academic-theme";
+@import "academic-site";
+@import "academic-navigation";
+
+.math-genealogy-icon span {
+  display: inline-block;
+  width: 1.35em;
+  height: 1.35em;
+  background: currentColor;
+
+  mask: url("{{ '/assets/images/tree.png' | relative_url }}") center / contain no-repeat;
+  -webkit-mask: url("{{ '/assets/images/tree.png' | relative_url }}") center / contain no-repeat;
+}

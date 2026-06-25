@@ -1,0 +1,12 @@
+- name: EUROCRYPT
+  years: "2027"
+- name: ASIACRYPT
+  years: "2026, 2025"
+- name: ACM-CCS
+  years: "2026, 2025"
+- name: Trans. Symmetric Cryptol.
+  years: "2026/27, 2025/26, 2023/24, 2022/23"
+- name: SAC
+  years: "2026"
+- name: CANS
+  years: "2023, 2022"

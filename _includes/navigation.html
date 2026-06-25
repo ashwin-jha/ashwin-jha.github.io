@@ -1,0 +1,51 @@
+{% assign current_url = page.url | replace: 'index.html', '' %}
+
+<nav class="navbar">
+  <div class="nav-container">
+    
+    <ul class="menu-list hamburger-menu" id="hamburger-nav">
+      <li class="navbar-item">
+        <button
+          class="hamburger-text"
+          type="button"
+          data-hamburger="#_hamburger"
+          aria-label="Open navigation"
+          aria-controls="_hamburger"
+          aria-expanded="false"
+        >
+          <span class="hamburger-symbol" aria-hidden="true">&#9776;</span>
+        </button>
+
+        <div id="_hamburger" class="hamburger">
+          <ul class="hamburger-list">
+            {% for item in site.data.navigation %}
+            {% assign item_url = item.link | relative_url %}
+            {% assign item_raw = item.link | replace: '#', '' %}
+              <li class="hamburger-item">
+                <a class="hamburger-link" href="{{ item.link | relative_url }}" {% if item.target %}target="{{ item.target }}"{% endif %}>
+                  {{ item.name }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </li>
+    </ul>
+    
+    <ul class="menu-list bar-menu" id="full-nav">
+      {% for item in site.data.navigation %}
+      {% assign item_url = item.link | relative_url %}
+      {% assign item_raw = item.link | replace: 'index.html', '' %}
+        <li class="navbar-item">
+          <a class="navbar-link {% if current_url == item.link or current_url == item_raw %}active{% endif %}" href="{{ item.link | relative_url }}" {% if item.target %}target="{{ item.target }}"{% endif %}>
+            {{ item.name }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+    
+    <button class="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle theme">
+      <i class="fa-solid fa-circle-half-stroke"></i>
+    </button>
+  </div>
+</nav>
