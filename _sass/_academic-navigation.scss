@@ -54,7 +54,7 @@
   line-height: 6.5rem;
   margin-right: 3.2rem;
 
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   font-size: 1.1rem;
   font-weight: 650;
   letter-spacing: 0.18rem;
@@ -158,10 +158,15 @@
 }
 
 .hamburger-text:hover,
-.hamburger-text:focus {
+.hamburger-text:focus-visible {
   color: var(--color-bg);
   background: var(--color-link);
   border-color: var(--color-link);
+}
+
+.hamburger-text:focus-visible {
+  outline: 2px solid var(--color-link);
+  outline-offset: 3px;
 }
 
 /* Open-state button becomes a tab attached to the dropdown */
@@ -236,7 +241,7 @@
   display: block;
   padding: 1rem 1.6rem;
 
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   font-size: 1.1rem;
   font-weight: 650;
   letter-spacing: 0.12rem;
