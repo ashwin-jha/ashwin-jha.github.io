@@ -28,6 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     themeToggle.setAttribute("aria-label", label);
     themeToggle.setAttribute("title", label);
+    
+    themeToggle.blur();
   }
 
   if (themeToggle) {

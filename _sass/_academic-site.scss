@@ -54,7 +54,7 @@ a {
 }
 
 a:hover,
-a:focus {
+a:focus-visible {
   color: var(--color-link-hover);
 }
 
@@ -110,9 +110,9 @@ button:focus-visible {
 }
 
 .profile-icons a:hover,
-.profile-icons a:focus,
+.profile-icons a:focus-visible,
 .profile-links a:hover,
-.profile-links a:focus {
+.profile-links a:focus-visible {
   border-color: var(--color-link);
   background: var(--color-surface-soft);
   color: var(--color-link-hover);
@@ -351,7 +351,9 @@ p {
 // Buttons: make Skeleton buttons less shouty
 // --------------------------------------------------
 .button,
+.button:focus,
 button,
+button:focus,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
@@ -373,11 +375,11 @@ button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
-.button:focus,
-button:focus,
-input[type="submit"]:focus,
-input[type="reset"]:focus,
-input[type="button"]:focus {
+.button:focus-visible,
+button:focus-visible,
+input[type="submit"]:focus-visible,
+input[type="reset"]:focus-visible,
+input[type="button"]:focus-visible {
   border-color: var(--color-link);
   color: var(--color-link-hover);
 }

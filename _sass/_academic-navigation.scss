@@ -75,15 +75,18 @@
    Theme toggle: always right
 ------------------------------------------------------------ */
 
-.theme-toggle {
+.theme-toggle,
+.theme-toggle:focus {
   margin-left: auto;
+  margin-bottom: 0;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
-  width: 3.6rem;
+  
+  min-height: 0;
   height: 3.6rem;
+  width: 3.6rem;
   padding: 0;
 
   border: 1px solid var(--color-border);
@@ -103,7 +106,7 @@
 }
 
 .theme-toggle:hover,
-.theme-toggle:focus {
+.theme-toggle:focus-visible {
   color: var(--color-link);
   border-color: var(--color-link);
   background: var(--color-bg);
@@ -124,7 +127,8 @@
   display: block;
 }
 
-.hamburger-text {
+.hamburger-text,
+.hamburger-text:focus {
   position: relative;
   z-index: 1002;
 
@@ -162,11 +166,6 @@
   color: var(--color-bg);
   background: var(--color-link);
   border-color: var(--color-link);
-}
-
-.hamburger-text:focus-visible {
-  outline: 2px solid var(--color-link);
-  outline-offset: 3px;
 }
 
 /* Open-state button becomes a tab attached to the dropdown */
