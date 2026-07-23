@@ -177,9 +177,11 @@ h3 {
 }
 
 p {
+  text-align: justify;
   max-width: none;
   margin-bottom: 2.2rem;
   text-wrap: pretty;
+  hyphens: auto;
 }
 
 .lead {

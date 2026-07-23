@@ -17,3 +17,8 @@ talk_delivered:
   prefix: "Gave an invited talk at"
   label: "Talk"
   icon: "fa-solid fa-person-chalkboard"
+
+new_position:
+  prefix: "Joined"
+  label: "Position"
+  icon: "fa-solid fa-briefcase"

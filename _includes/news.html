@@ -21,6 +21,7 @@
             {% when "talk_invitation" %}
             <a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.venue }}</a>.
             {% when "talk_delivered" %}<a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.venue }}</a> {{ item.topic }}.
+            {% when "new_position" %}<a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.organisation }}</a> as a {{ item.position }}.
             {% else %}
             {{ item.text }}.
             {% endcase %}
