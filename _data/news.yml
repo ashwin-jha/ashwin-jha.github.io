@@ -1,3 +1,19 @@
+- date: "2026-09-27"
+  type: "preprint"
+  topic: "quantum security of sum of permutations"
+  link: "https://eprint.iacr.org/2026/2230"
+
+- date: "2026-09-24"
+  type: "pc"
+  venue: "CRYPTO 2027"
+  link: "https://crypto.iacr.org/2027/"
+
+- date: "2026-09-24"
+  type: "talk_delivered"
+  venue: "GAPS 2026"
+  link: "https://gapsworkshop.github.io/gaps2026/"
+  topic: "on key alternating ciphers"
+
 - date: "2026-07-17"
   type: "new_position"
   organisation: University of Wuppertal
@@ -28,4 +44,4 @@
 - date: "2026-02-09"
   type: "preprint"
   topic: "definition of quantum-secure MACs"
-  link: "https://eprint.iacr.org/2026/336"
+  link: "https://eprint.iacr.org/2026/271"

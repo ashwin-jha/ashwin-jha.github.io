@@ -1,3 +1,5 @@
+- name: CRYPTO
+  years: "2027"
 - name: EUROCRYPT
   years: "2027"
 - name: ASIACRYPT
